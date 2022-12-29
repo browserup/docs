@@ -1,0 +1,156 @@
+header:
+  - title:      BrowserUp
+    url:        https://browserup.com
+    key:        docs
+  - title:      About
+    url:        /about.html
+  - title:      "Manifesto"
+    url:        /en/load/manifesto
+
+
+docs-en:
+  - title:      Getting Started
+    children:
+      - title:  "Quick Start"
+        url:    /en/load/quick-start
+      - title:  "Why BrowserUp?"
+        url:    /en/load/why-browserup
+      - title: Test Config
+        url: /en/load/test-config
+      - title:  Coding your Load Test
+        url: /en/load/coding-for-the-load-test
+      - title: Proxy Config
+        url: /en/load/proxy-config
+
+  - title:      Load Test
+    children:
+      - title:  Playwright Load Test
+        url:    /en/load/playwright-load-test
+      - title:  Postman Load Test
+        url:    /en/load/postman-load-test
+      - title:  Ruby Load Test
+        url:    /en/load/ruby-load-test
+      - title:  Java Load Test
+        url:    /en/load/load-test-with-java
+      - title:  Python Load Test
+        url:    /en/load/python-load-test
+      - title:  Internet Of Things
+        url:    /en/load/load-test-Internet-Of-Things
+      - title:  Load test with Selenium
+        url:    /en/load/load-test-with-selenium
+      - title:  Load Testing Websockets
+        url:    /en/load/load-testing-websockets
+      - title:  Containers
+        url:    /en/load/load-test-containers
+
+  - title:      Reporting
+    children:
+      - title:  Reports
+        url:    /en/load/reports
+      - title:  Studio
+        url:    /en/load/report-studio
+
+  - title:      Command Line Util
+    children:
+      - title:  provision
+        url:    /en/load/commands/provision
+      - title:  start
+        url:    /en/load/commands/start
+      - title:  stop
+        url:    /en/load/commands/stop
+      - title:  deprovision
+        url:    /en/load/commands/deprovision
+      - title: help
+        url: /en/load/commands/help
+      - title: verify
+        url: /en/load/commands/verify
+      - title: upload_license
+        url: /en/load/commands/upload_license
+      - title: generate
+        url: /en/load/commands/generate
+
+  - title:      Admin
+    children:
+      - title:  Audit Logs
+        url:    /en/admin/audit-logs
+      - title:  User Access
+        url:    /en/admin/user-access
+      - title:  Workspaces
+        url:    /en/admin/workspaces
+      - title:  Licensing
+        url:    /en/admin/licensing
+      - title:  Health check
+        url:    /en/admin/health-check
+
+#  - title:      Languages
+#    children:
+#      - title:  中文
+#        url:    /docs/zh/quick-start
+
+#
+#docs-zh:
+#  - title:      开始
+#    children:
+#      - title:  快速开始
+#        url:    /docs/zh/quick-start
+#      - title:  从 1.x 升级到 2.x
+#        url:    /docs/zh/update-from-1-to-2
+#  - title:      定制
+#    children:
+#      - title:  配置
+#        url:    /docs/zh/configuration
+#      - title:  导航栏
+#        url:    /docs/zh/navigation
+#      - title:  布局
+#        url:    /docs/zh/layouts
+#      - title:  Logo 和 Favicon
+#        url:    /docs/zh/logo-and-favicon
+#      - title:  作者
+#        url:    /docs/zh/authors
+#      - title:  国际化
+#        url:    /docs/zh/i18n
+#  - title:      内容
+#    children:
+#      - title:  撰写博客
+#        url:    /docs/zh/writing-posts
+#      - title:  附加样式
+#        url:    /docs/zh/additional-styles
+#      - title:  扩展
+#        url:    /docs/zh/extensions
+#      - title:  Markdown 增强
+#        url:    /docs/zh/markdown-enhancements
+#  - title:      其他语言
+#    children:
+#      - title:  English
+#        url:    /en/load/quick-start
+
+layouts:
+  - title: Layouts
+    children:
+      - title:  Single
+        url:    /page/single.html
+      - title:  Aside
+        url:    /page/aside.html
+      - title:  Sidebar
+        url:    /page/sidebar.html
+
+      - title:  Sidebar (Aside)
+        url:    /page/sidebar-aside.html
+      - title:  Article Header Overlay Background Fill
+        url:    /page/article-header-overlay-background-fill.html
+      - title:  Article Header Overlay Background Image
+        url:    /page/article-header-overlay-background-image.html
+
+      - title:  Article Header Image
+        url:    /page/article-header-cover-image.html
+      - title:  Article Header Overlay Background Image (Customized Header Background)
+        url:    /page/article-header-overlay-background-image-header-background.html
+      - title:  Article Header Image (Customized Header Background)
+        url:    /page/article-header-cover-image-header-background.html
+
+      - title:  Article Header Overlay Background Fill (Immersive + Translucent Header)
+        url:    /page/article-header-overlay-background-fill-immersive-translucent-header.html
+      - title:  Article Header Overlay Background Image (Immersive + Translucent Header)
+        url:    /page/article-header-overlay-background-image-immersive-translucent-header.html
+      - title:  Article Header Image (Immersive + Translucent Header)
+        url:    /page/article-header-cover-image-immersive-translucent-header.html
