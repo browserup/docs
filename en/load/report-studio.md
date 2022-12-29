@@ -10,7 +10,7 @@ Not every type of counter applies to every test, so make sure you're working
 with counters that apply to the test type you're running.
 
 
-[<img src="/assets/images/load/report-studio.png" width="800"/>](/assets/images/load/report-studio.png)
+[<img src="{{ site.baseurl }}/assets/images/load/report-studio.png" width="800"/>](assets/images/load/report-studio.png)
 
 ### Building a new report
 
@@ -18,11 +18,11 @@ Click the +Metric button
 
 #### Metric selection:
 
-[<img src="/assets/images/load/report-builder.png" width="400"/>](/assets/images/load/report-builder.png)
+[<img src="{{ site.baseurl }}/assets/images/load/report-builder.png" width="400"/>](assets/images/load/report-builder.png)
 
 ### Metric Filters
 
-[<img src="/assets/images/load/report-counter-selector.png" width="400"/>](/assets/images/load/report-counter-selector.png)
+[<img src="{{ site.baseurl }}/assets/images/load/report-counter-selector.png" width="400"/>](assets/images/load/report-counter-selector.png)
 
 Metrics like:
 

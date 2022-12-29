@@ -6,7 +6,7 @@ key: audit-logs
 BrowserUp tracks the actions users take within the system, the resources that are
 accessed or modified, the user, and when.
 
-![Audit Logs](/assets/images/admin/audit-logs.png)
+![Audit Logs](assets/images/admin/audit-logs.png)
 
 ## Search
 
@@ -23,7 +23,7 @@ Click the "View" link for an action to see more detail about the action's event.
 
 ### Action Detail Screen
 
-![Audit Logs Action Detail Screen](/assets/images/admin/audit-log-action.png)
+![Audit Logs Action Detail Screen](assets/images/admin/audit-log-action.png)
 
 
 
