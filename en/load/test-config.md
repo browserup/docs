@@ -94,7 +94,7 @@ will not print the HAR and output.
 
 The output of the command looks like this:
 
-[<img src="/assets/images/load/verify-command.png" width="400"/>](/assets/images/load/verify-command.png)
+[<img src="{{ site.baseurl }}/assets/images/load/verify-command.png" width="400"/>]({{ site.baseurl }}/assets/images/load/verify-command.png)
 
 Once you have succesfully verified your command with your artifact_dir, you can configure a [profile settings](/en/load/profile-settings)
 in the scenario within your [test config](/en/load/test-config)

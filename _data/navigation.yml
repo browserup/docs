@@ -12,7 +12,7 @@ docs-en:
   - title:      Getting Started
     children:
       - title:  "Quick Start"
-        url:    /en/load/index
+        url:    /en/load/quick-start
       - title:  "Why BrowserUp?"
         url:    /en/load/why-browserup
       - title: Test Config

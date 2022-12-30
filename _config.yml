@@ -19,7 +19,7 @@
 text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : # does not include hostname
+baseurl : /docs
 title   :
 company_name: BrowserUp, Inc.
 
@@ -31,9 +31,11 @@ standard_node_version: Node 19
 standard_java_version: OpenJDK 11
 standard_base_os: Debian Bullseye Slim (11.0)
 
+
 description: > # this means to ignore newlines until "Language & timezone"
   BrowserUp Documentation
 
+page_excerpts: true
 
 ## => Language and Timezone
 ##############################
@@ -166,6 +168,7 @@ pageview:
     app_class : # LeanCloud App class
 
 
+
 ## => Search
 ##############################
 search:
@@ -174,6 +177,7 @@ search:
   ## Google Custom Search Engine
   google:
     custom_search_engine_id: # Google Custom Search Engine ID
+
 
 
 ## => Analytics
@@ -229,6 +233,11 @@ defaults:
         nav: "docs-en"
       aside:
         toc: true
+  - scope:
+      path: "assets/"
+    values:
+      layout: none
+
 
 ## => Plugins
 ##############################
@@ -236,4 +245,5 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
   - jemoji

@@ -3,7 +3,6 @@ The BrowserUp documentation is created with (Jekyll)[https://jekyllrb.com/]
 
 It is using the (TeXt Theme)[https://kitian616.github.io/jekyll-TeXt-theme/docs/en/i18n]
 
-
 ### Installation
 
 ```bash
@@ -19,16 +18,18 @@ bundle exec jekyll serve --livereload
 Overview:
 
 * Jekyll generates a static site. It is regenerated each time into the _site subfolder.
-
-Important parts:
-
-* in /en is where the browserup pages are stored.
+* in /en is where the browserup pages are stored in markdown format
+  * This markdown continually regenerates the html in the _site folder
 * There are two URL routing styles.
   A - Follow the file layout.
   B - Specify permalink: /some/route at the top of each file
+* For now, we are using the file layout for routing
 * Site config is at _config.yml at the route
 * The navigations (menu, and sidebar) are in _data/navigation.yml
 * Any folder with an underscore won't be in the actual outputted _site
+* Images are in assets/images. Follow the examples in /en/load for linking.
+* The theme had "posts" for blog style pages. They are still in here, but not used
+* The theme also carries the html templates in the _layouts folder. We are free to hack those up as well
 
 
 

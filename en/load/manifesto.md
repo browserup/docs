@@ -104,7 +104,10 @@ At (large) Google-scale, it is likely that trading labor for machine efficiency 
 At (small) startup scale, load testing is often a one-off and not a rinse-and-repeat process yet.
 Although, for startups, our 50 freemium users could be a very cost-effective way to get a sanity check.
 
-We think our approach is ideal for mature testing organizations. In our surveys, we found most
-load testing isn't completed until an entire sprint after the other testing is "done"
-because the manintenance and scripting take longer. Where this is true, we think you can
+If you don't have a web _application_, you can probably get by with something simple, like Apache bench.
+
+We think our approach is ideal for mature testing organizations, testing complex web apps.
+
+In our surveys, we found most load testing isn't completed until an entire sprint after the other testing is "done"
+because the maintenance and scripting take longer. Where this is true, we think you can
 release well-tested software a sprint sooner with our approach.

@@ -2,7 +2,7 @@
 {%- if page.sidebar.nav -%}
   <div class="sidebar-toc">
     <div style="">
-      <img src="/assets/images/logo/logo.png" style="width: 130px; height: 25px; margin: 10px 0px 10px 0px;">
+      <img src="{{site.baseurl}}/assets/images/logo/logo.png" style="width: 130px; height: 25px; margin: 10px 0px 10px 0px;">
     </div>
     {%- assign _sidebar_nav = site.data.navigation[page.sidebar.nav] -%}
     {%- if _sidebar_nav -%}
@@ -16,7 +16,7 @@
             {%- include snippets/get-nav-url.html path=page.url -%}
             {%- assign _page_url = __return -%}
             {%- if _nav_url == _page_url -%}
-              <li class="toc-h2 active"><a href="{{ _nav_url }}">{{ _child.title }}</a></li>
+              <li class="toc-h2 active" id="scroll_to_me"><a href="{{ _nav_url }}">{{ _child.title }}</a></li>
             {%- else -%}
               <li class="toc-h2"><a href="{{ _nav_url }}">{{ _child.title }}</a></li>
             {%- endif -%}
@@ -27,3 +27,10 @@
     {%- endif -%}
   </div>
 {%- endif -%}
+ <script>
+   var my_element = document.getElementById("scroll_to_me");
+   my_element.scrollIntoView({
+     block: "start",
+     inline: "nearest"
+   });
+ </script>

@@ -2,6 +2,8 @@
 title: Quick Start
 aside:
   toc: true
+redirect_from:
+  - /
 ---
 
 The starting point for working with BrowserUp is the command line util.

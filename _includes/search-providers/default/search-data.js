@@ -1,14 +1,22 @@
+console.log('hi');
+
+pages = [
+    {%- for _page in site.pages -%}
+        {%- if _page.title != blank -%}
+        {'title':{{ _page.title | jsonify }},
+          'excerpt': {{ _page.excerpt |jsonify }},
+          {%- include snippets/prepend-baseurl.html path=_page.url -%}
+          {%- assign _url = __return -%}
+          'url':{{ _url | jsonify }}}
+          {%- unless forloop.last -%},{%- endunless -%}
+        {%- endif -%}
+    {%- endfor -%}
+]
+
 window.TEXT_SEARCH_DATA={
-  {%- for _collection in site.collections -%}
-    {%- unless forloop.first -%},{%- endunless -%}
-    '{{ _collection.label }}':[
-      {%- for _article in _collection.docs -%}
-      {%- unless forloop.first -%},{%- endunless -%}
-      {'title':{{ _article.title | jsonify }},
-      {%- include snippets/prepend-baseurl.html path=_article.url -%}
-      {%- assign _url = __return -%}
-      'url':{{ _url | jsonify }}}
-      {%- endfor -%}
-    ]
-  {%- endfor -%}
+  'posts': [],
+  'pages': pages
 };
+
+
+console.log(window.TEXT_SEARCH_DATA);
