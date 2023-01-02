@@ -13,12 +13,12 @@ The BrowserUp Command Line Util:
 * Starts and Stops tests
 * And More
 
-[<img src="{{ site.baseurl }}/assets/images/load/cli-util.png" width="500"/>](assets/images/load/cli-util.png)
+[<img src="{{ site.baseurl }}/assets/images/load/cli-util.png" width="500"/>]({{ site.baseurl }}/assets/images/load/cli-util.png)
 
 Once the test cluster is running, you can log into the cluster's web UI and
 view your results, create reports administer other users and more.
 
-[<img src="{{ site.baseurl }}/assets/images/load/screenshot.png" width="500"/>](assets/images/load/screenshot.png)
+[<img src="{{ site.baseurl }}/assets/images/load/screenshot.png" width="500"/>]({{ site.baseurl }}/assets/images/load/screenshot.png)
 
 ## Prerequisites
 

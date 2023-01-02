@@ -17,7 +17,7 @@ The cli allows you to:
 ### Verifying a test command
 
 When a BrowserUp profile is run, it runs inside a container--our
-standard-base, or a custom container based on our images.
+standard-full image, or a custom container you created based on our standard-base image.
 
 The *command* itself is a bash command that executes _something_, such as
 a script, a JAR, a binary, compiled app, that you expect will create traffic.

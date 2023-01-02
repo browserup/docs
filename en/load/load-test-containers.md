@@ -5,7 +5,6 @@ title: Load Testing With Containers
 BrowserUp allows you to create a custom container in which your test will run.
 
 For BrowserUp to work with your container, it needs to be based off our standard-base image.
-This image, which is built off a Debian base, has our traffic capturing code built in, and pre-configured.
 
 ## Testing in local Docker, with CLI
 

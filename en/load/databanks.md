@@ -28,4 +28,4 @@ Databanks serve several important purposes:
 
 
 ### In the UI:
-[<img src="{{ site.baseurl }}/assets/images/load/urls-report.png" width="800"/>](assets/images/load/urls-report.png)
+[<img src="{{ site.baseurl }}/assets/images/load/urls-report.png" width="800"/>]({{ site.baseurl }}/assets/images/load/urls-report.png)

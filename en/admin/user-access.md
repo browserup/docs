@@ -41,4 +41,4 @@ In order to set a user's role, you must be a superadmin, or admin. Admin's are o
 to administer users in their own workspace. Click on your username on the top menu bar, then select Users in the
 drop-down menu.
 
-[<img src="{{ site.baseurl }}/assets/images/admin/users-menu.png" width="200"/>](assets/images/admin/users-menu.png)
+[<img src="{{ site.baseurl }}/assets/images/admin/users-menu.png" width="200"/>]({{ site.baseurl }}/assets/images/admin/users-menu.png)
