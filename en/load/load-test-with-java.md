@@ -19,11 +19,11 @@ The key advantages to doing this with BrowserUp are:
 
 There are two approaches to creating this type of test:
 
-* Use our standard-full image with a FAT Jar. A Fat JAR is compiled with all
+* Use our standard image with a FAT Jar. A Fat JAR is compiled with all
 dependencies built into the Jar. For this approach, your app will be run with our
 built-in Java (OpenJDK 17)
 
-* Use a custom image based on our browserup/standard-base. With a custom image, you are free to install whatever dependencies
+* Use a custom image based on our browserup/custom-base. With a custom image, you are free to install whatever dependencies
 you like into the image, as well as to change the Java version or tweak the image in other ways.
 
 
@@ -38,16 +38,16 @@ run browser-based load without worrying about containers.
 browserup generate java
 ```
 
-Our browserup/standard-full image ships with JavaScript, Java, Ruby and Python pre-installed.
+Our browserup/standard image ships with JavaScript, Java, Ruby and Python pre-installed.
 
 One advantage of using our pre-built image is that it can run other types of tests as well.
 
 {% include browserup/config-supports-all-test-types.html %}
 
-2 - Create a Custom Image based on browserup/standard-base, with your own dependencies installed. With this approach,
+2 - Create a Custom Image based on browserup/custom-base, with your own dependencies installed. With this approach,
 you won't necessarily need to create a FAT jar (although that's fine as well).
 
-At present, the base for the custom image must be our browserup/standard-base image, which is built on Debian Bullseye Slim.
+At present, the base for the custom image must be our browserup/custom-base image, which is built on Debian Bullseye Slim.
 
 So simply start your Dockerfile with:
 

@@ -36,19 +36,24 @@ The answer is:  anything you like that drives traffic!
 
 Java and Selenium? check
 Playwright? check
+
 Your PostMan script?
+
 Python script? check
+
 Ruby Script? check
+
 Some binary you compiled yourself? check
-Brainf**ck? check (probably, but in a customer container)--really, probably don't do this
+
 Any other thing, yes, probably!
 
-...So do I have to worry about containers now?
+#### ...So do I have to worry about containers now?
 
 Probably not! We have a standard container with Java, Javascript, Ruby, Python, Bash, Postman
 and Curl and some other things ready to go. It has Chromium installed and ready for each of these languages. We call
-this our browserup/standard-base image and you get it, plus your assets by default
-and there's no special container setup. It just works!
+this our browserup/custom-base image and you get it, plus your assets by default
+and there's no special container setup. It just works, and you don't need to
+think about containers.
 
 If your needs are off the beaten path, the custom container option gives you an escape valve
 where you can install anything you want to drive load.

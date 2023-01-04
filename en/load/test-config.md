@@ -45,7 +45,7 @@ The stages define a duration, and type of stage for the load test.
 
 
 images:  [optional]
-: By default, your code is wrapped into a docker container running our standard-base image.
+: By default, your code is wrapped into a docker container running our custom-base image.
 : However, if you specify an image, you can use a custom image, based off our image, into which
 : you have pre-installed any of your own software that will be utilized for the load test.
 

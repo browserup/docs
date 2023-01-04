@@ -2,7 +2,7 @@
 title: Load Testing With Playwright
 ---
 
-The browserup/standard-base image ships with Playwright installed.
+The browserup/custom-base image ships with Playwright installed.
 
 To test out a playwright sample script, run:
 

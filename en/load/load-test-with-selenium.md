@@ -26,7 +26,7 @@ There are two main ways to use Selenium and Java in BrowserUp
 browserup generate java
 ```
 
-Our browserup/standard-base image ships with JavaScript, Java, Ruby and Python pre-installed.
+Our browserup/custom-base image ships with JavaScript, Java, Ruby and Python pre-installed.
 
 One advantage of using our pre-built image is that it can run other types of tests as well.
 
@@ -35,4 +35,4 @@ One advantage of using our pre-built image is that it can run other types of tes
 2 - Create a Custom Image based on ours, with your own dependencies installed. With this approach,
 you won't necessarily need to create a FAT jar (although that's fine as well).
 
-At present, the base for the custom image must be our standard-base image, which is built on Debian Bullseye Slim.
+At present, the base for the custom image must be our custom-base image, which is built on Debian Bullseye Slim.

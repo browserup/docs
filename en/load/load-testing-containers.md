@@ -8,7 +8,7 @@ These images, which is built off a Debian Bullseye base, have our traffic-captur
 ## Standard Full
 
 By default, if no image is specified in your [profile](profile-settings)
-your code will be running our browserup/standard-full image.
+your code will be running our browserup/standard image.
 
 This image comes with the following pre-installed:
 * JavaScript (Node 19), Java (17), Python (3.11), Ruby (3.2)
@@ -20,18 +20,18 @@ This image comes with the following pre-installed:
 * Newman (for PostMan)
 
 ```bash
-browserup/standard-full
+browserup/standard
 ```
 
 ## Custom Container
 
 However, it may be that you'd like to run a custom container with your own
 libraries, dependencies, and code. BrowserUp supports custom OCI/Docker container-based
-load testing. To set this up, you'll build your image on top of our [browserup/standard-base](https://hub.docker.com/r/browserup/standard-base)
+load testing. To set this up, you'll build your image on top of our [browserup/custom-base](https://hub.docker.com/r/browserup/custom-base)
 image.
 
 ```bash
-FROM browserup/standard-base:latest
+FROM browserup/custom-base:latest
 ```
 
 There are a few simple rules to creating your load test:
@@ -54,7 +54,7 @@ AWS registry.
 
 - BrowserUp takes the artifact_dir, if specified in the profile, and uploads it to our container
 -
-- If the image is not specified, it uses the default *standard-full* image, so the artifact_dir key __must__ be specified
+- If the image is not specified, it uses the default *standard* image, so the artifact_dir key __must__ be specified
   as otherwise, there's not going to be something to run for the test.
 
 - With a custom image, the target of *command* might be baked into the image, so the *artifact_dir* key is not required to be specified for a profile

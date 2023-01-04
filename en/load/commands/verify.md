@@ -3,7 +3,7 @@ title: verify
 ---
 
 When a BrowserUp profile is run, it runs inside a container--our
-standard-base, or a custom container based on our images.
+custom-base, or a custom container based on our images.
 
 The *command* itself is a bash command that executes _something_, such as
 a script, a JAR, a binary, compiled app, that you expect will create traffic.
