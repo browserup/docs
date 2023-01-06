@@ -26,6 +26,6 @@ Options:
 				  # Or set the $BROWSERUP_API_TOKEN environment variable.
 				  # Required for remote tests. Optional for local tests.
 
-Stop a load test scenario on a remote private BrowserUp cluster.
+Stop a load test scenario on a remote (AWS) BrowserUp cluster.
 Local Docker ✓
 ```

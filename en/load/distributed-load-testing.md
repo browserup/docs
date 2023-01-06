@@ -26,10 +26,10 @@ in your scenario in your (run config)[/en/config-yaml].
 Make sure your run config has:
 ```yaml
 settings:
-  cluster_type: remote
+  cluster_type: aws
 ```
 
-The *remote* cluster type is automatically provisioned, created, and scaled in AWS by BrowserUp
+The *remote* (AWS) cluster type is automatically provisioned, created, and scaled in AWS by BrowserUp
 within *your own* AWS account.
 
 Our approach provides superior privacy and GDPR protection--we don't see your data!

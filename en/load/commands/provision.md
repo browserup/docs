@@ -16,7 +16,7 @@ Usage:
   browserup provision
 
 Options:
-      [--cluster-type=CLUSTER_TYPE]          # Cluster type, either 'local' or 'remote'.
+      [--cluster-type=CLUSTER_TYPE]          # Cluster type, either 'local' or 'aws'.
                                              # Default: local
       [--region=REGION]                      # AWS Region
                                              # Default: us-east-2

@@ -6,8 +6,7 @@ redirect_from:
   - /
 ---
 
-The starting point for working with BrowserUp is the command line util.
-The BrowserUp Command Line Util:
+The starting point for using BrowserUp is The BrowserUp Command Line Util. It:
 * Creates test configs (BrowserUp Yaml)
 * Launches (provision) the test cluster (locally, or in Amazon AWS)
 * Starts and Stops tests
@@ -32,7 +31,7 @@ view your results, create reports administer other users and more.
 
 * Amazon AWS account
 * Local Mac Arm64 (M1/M2) or AMD64 or Linux to operate the BrowserUp Command line Util
-* Local Docker is not required for remote (cloud) execution, so CI/CD setup is simple
+* Local Docker is not required for remote AWS execution, so CI/CD setup is simple
 
 ## Installation
 

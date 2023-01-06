@@ -15,24 +15,30 @@ profiles can be made for multiple different test types in a single test config.
 The generated files are useful as scaffolding for starting your test creation.
 
 ```bash
-browserup help generate
-=================================
+./bin/browserup help new
+============================
 BrowserUp Command Line Util
-=================================
+============================
 
 Usage:
-  browserup generate [ruby|java|javascript|playwright|postman]
+  browserup new [examples]
 
 Options:
   v, [--verbose], [--no-verbose]  # Enable or disable verbose output logging. Disabled by default.
 				  # Or set the $BROWSERUP_CLI_VERBOSE environment variable.
   c, [--config=CONFIG]            # Path to browserup.yaml configuration file.
-                                  # Default: /Users/ebeland/apps/browserup/cli/scaffolds/python/browserup.yaml
+                                  # Default: /Users/ebeland/apps/browserup/cli/browserup.yaml
   a, [--api-token=API_TOKEN]      # Your BrowserUp account API access token.
 				  # Or set the $BROWSERUP_API_TOKEN environment variable.
 				  # Required for remote tests. Optional for local tests.
 
 Description:
-  `generate TYPE` Generate a working example of a particular test type into the current working directory. > $ browserup generate
-Local Docker ✓
+  `new "postman,curl"` Create a new working example test config (browserup.yaml).
+
+  Available Examples:
+
+  postman, curl, java, ruby, python, playwright-js, playwright-python, selenium-ruby, selenium-java, selenium-python, custom
+
+  If a comma-separated list of desired examples is passed, example files for each type will be generated and included in the config.
+
 ```

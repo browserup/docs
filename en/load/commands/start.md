@@ -16,7 +16,7 @@ browserup start
 Options:
 [--scenario=SCENARIO]                        # A valid scenario ID from the browserup.yaml configuration file. The first scenario found is used by default.
 [--provision], [--no-provision]              # If no BrowserUp app is provisioned, provision one before starting the test.
-[--cluster-type=CLUSTER_TYPE]                # Cluster type, either 'local' or 'remote'.
+[--cluster-type=CLUSTER_TYPE]                # Cluster type, either 'local' or 'aws'.
 # Default: local
 [--region=REGION]                            # AWS Region
 # Default: us-east-2

@@ -26,7 +26,7 @@ Usage:
 Options:
       [--scenario=SCENARIO]                        # A valid scenario ID from the browserup.yaml configuration file. The first scenario found is used by default.
       [--provision], [--no-provision]              # If no BrowserUp app is provisioned, provision one before starting the test.
-      [--cluster-type=CLUSTER_TYPE]                # Cluster type, either 'local' or 'remote'.
+      [--cluster-type=CLUSTER_TYPE]                # Cluster type, either 'local' or 'aws'.
                                                    # Default: local
       [--region=REGION]                            # AWS Region
                                                    # Default: us-east-2
@@ -44,6 +44,6 @@ Options:
 				  # Or set the $BROWSERUP_API_TOKEN environment variable.
 				  # Required for remote tests. Optional for local tests.
 
-Run a load scenario. Provisions local (default) or remote BrowserUp app. Builds and uploads all items in scenario.
+Run a load scenario. Provisions local (default) or AWS BrowserUp app. Builds and uploads all items in scenario.
 Local Docker ✓
 ```

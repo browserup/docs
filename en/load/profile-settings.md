@@ -42,7 +42,7 @@ region:
 : The region setting is ignored for local runs.
 
 vus_per_vcpu:
-: For cloud tests (cluster_type: remote), multiple containers can be run on a single vcpu. Proper load tests
+: For cloud tests (cluster_type: aws), multiple containers can be run on a single vcpu. Proper load tests
 : implement a delay between iterations and steps, which means a virtual user is sleeping for some portion of the time.
 : This sleep time is important for accurately testing keepalives, open sessions, streaming traffic, websockets, and
 : other
