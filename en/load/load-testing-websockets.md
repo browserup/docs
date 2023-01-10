@@ -19,8 +19,6 @@ This approach offers a number of advantages:
 
 ## Other Supported Approaches
 
-* You can make websocket requests programmatically with a language in our standard image: Javascript, Ruby, Python, Java, etc.
-* You can run PostMan requests, which now support websockets, using our standard image
-* You can create a custom image based on ours, with your language and libraries of choice installed and use _that_ to drive
-websocket requests
-
+* Make websocket requests programmatically with a language in our standard image: Javascript, Ruby, Python, Java, etc.
+* Run PostMan requests, which now support websockets, using our standard image
+* Create a custom docker image based on ours but with your language and libraries of choice driving the websocket requests and use _that_

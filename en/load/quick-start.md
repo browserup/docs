@@ -15,7 +15,7 @@ The starting point for using BrowserUp is The BrowserUp Command Line Util. It:
 [<img src="{{ site.baseurl }}/assets/images/load/cli-util.png" width="500"/>]({{ site.baseurl }}/assets/images/load/cli-util.png)
 
 Once the test cluster is running, you can log into the cluster's web UI and
-view your results, create reports administer other users and more.
+view your results, create reports administer other users, etc.
 
 [<img src="{{ site.baseurl }}/assets/images/load/screenshot.png" width="500"/>]({{ site.baseurl }}/assets/images/load/screenshot.png)
 
