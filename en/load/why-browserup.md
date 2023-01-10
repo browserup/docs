@@ -13,14 +13,16 @@ See [our manifesto](manifesto.md) for more about _why_ we think this is the righ
 BrowserUp uses your code, libraries, page objects, binaries, and PostMan definitions for load tests.
 Why maintain two implementations of "how to talk to your app" when you can maintain one?
 
-_Don't Repeat Yourself!_ We use the cloud to "scale the thing that makes the requests." With traditional load testing,
+#### Don't Repeat Yourself!
+
+BrowserUp uses the cloud to "scale the thing that makes the requests." With traditional load testing,
 you scale a script that makes requests that are _kinda_ like the real ones,
 or at least _kinda_ like how the real thing worked at the moment you hard-code it.
 
 Those tools force you to maintain a second implementation of your request-logic for API's, or page-walking logic for
 UI tests within their language, UI or IDE.
 
-Our approach uses assets you _already have_, so you can test earlier in the release cycle and shift
+BrowserUp uses assets you _already have_, so you can test earlier in the release cycle and shift
 *your load testing left*.
 
 * BrowserUp stays out of your way--work in your repo, in your IDE, in your language of choice
