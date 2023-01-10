@@ -10,7 +10,7 @@ What do we mean by "your code"?
 
 * Code in your IDE
 * Keep your code in your repo
-* We don't take your code, run it, and extract an HTTP script. We *actually* run your code during the test.
+* BrowserUp doesn't take your code, run it, and extract an HTTP script. BrowserUp *actually* runs your code during the test.
 * You can use your own libraries and extensions.
 * Because we run your code, you are free to import your own libraries, gems, JARs
 * If you build a custom image, you can use any language you can install on Debian

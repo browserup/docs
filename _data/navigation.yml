@@ -66,8 +66,8 @@ docs-en:
         url: /en/load/commands/verify
       - title: upload_license
         url: /en/load/commands/upload_license
-      - title: generate
-        url: /en/load/commands/generate
+      - title: new
+        url: /en/load/commands/new
 
   - title:      Admin
     children:

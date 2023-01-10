@@ -6,7 +6,7 @@ BrowserUp provides an easy way to load test using Ruby.
 
 There are a couple ways to achieve this:
 
-By default, BrowserUp packages Ruby 3.1 in it's custom-base image.
+By default, BrowserUp packages Ruby 3.2 in it's custom-base image.
 The custom-base comes with the following libraries pre-installed:
 
 * rspec

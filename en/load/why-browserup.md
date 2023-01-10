@@ -29,9 +29,9 @@ Our approach uses assets you _already have_, so you can test earlier in the rele
 
 ## Overview
 
-* We *run* _your_ code in our magic traffic-capturing containers. This means logic and condition-handling code just works
-* We containerize your _stuff_ (automatically) and scale containers running your code to generate load
-* We capture the traffic and provide rich reporting
+* BrowserUp *runs* _your_ code in our "magic" traffic-capturing containers. This means logic and condition-handling code just works
+* BrowserUp containerizes your _stuff_ (automatically) and scale containers running your code to generate load
+* BrowserUp captures the traffic and provides rich reporting
 
 You might be thinking "what scripting language do I use to create the script?" The answer is: anything you like that drives traffic!
 
@@ -51,10 +51,10 @@ Any other thing, yes, probably!
 
 #### ...So do I have to worry about containers now?
 
-Probably not! We have a standard container with Java, Javascript, Ruby, Python, Bash, Postman
-and Curl and some other things ready to go. It has Chromium installed and ready for each of these languages. We call
-this our browserup/standard image and you get it, plus your assets by default without any setup.
-It just works, and you don't need to think about containers.
+Probably not! BrowserUp has a standard container with Java, Javascript, Ruby, Python, Bash, Postman
+and Curl and some other things ready to go. It has Chromium installed and ready for each of these languages. This image
+is the browserup/standard image and you get it, plus your assets by default.
+It should just work, and you won't need to consider about containers.
 
 If your needs are off the beaten path, the browserup/custom-base container option gives you an escape valve
-where you can install anything you want to drive load.
+where you can install more or less *anything* you want to drive load.

@@ -1,11 +1,11 @@
 ---
-title: generate
+title: new
 ---
-The *generate* command is useful for getting working hello world files in a
+The *new* command is useful for getting working hello world files in a
 particular environment for your test.
 
 
-The generate command creates in the local directory:
+The new command creates in the local directory:
 * a browserup.yaml test config
 * an example set of files for that test-type
 
@@ -15,7 +15,6 @@ profiles can be made for multiple different test types in a single test config.
 The generated files are useful as scaffolding for starting your test creation.
 
 ```bash
-./bin/browserup help new
 ============================
 BrowserUp Command Line Util
 ============================
@@ -33,7 +32,7 @@ Options:
 				  # Required for remote tests. Optional for local tests.
 
 Description:
-  `new "postman,curl"` Create a new working example test config (browserup.yaml).
+  `new "postman,curl"` Create a new working example test config with a curl and postman example (browserup.yaml).
 
   Available Examples:
 
@@ -41,4 +40,5 @@ Description:
 
   If a comma-separated list of desired examples is passed, example files for each type will be generated and included in the config.
 
+Local Docker ✓
 ```
