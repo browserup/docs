@@ -2,7 +2,7 @@
 title: Distributed Load Testing
 ---
 
-BrowserUp provides distributed load testing capabilities out-of-the-box via Amazon Web Services.
+<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> provides distributed load testing capabilities out-of-the-box via Amazon Web Services.
 
 To configure a distributed test, simply set the "region" field on each profile
 in your scenario in your (run config)[/en/config-yaml].
@@ -29,7 +29,7 @@ settings:
   cluster_type: aws
 ```
 
-The *remote* (AWS) cluster type is automatically provisioned, created, and scaled in AWS by BrowserUp
+The *remote* (AWS) cluster type is automatically deployed, created, and scaled in AWS by <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>
 within *your own* AWS account.
 
 Our approach provides superior privacy and GDPR protection--we don't see your data!

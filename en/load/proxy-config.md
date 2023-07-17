@@ -18,7 +18,7 @@ Here are some examples of requests you may want to block:
 It is important to be mindful of what requests your web pages cause when
 they load.
 
-BrowserUp lets you configure your proxy settings on a per-profile basis.
+<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> lets you configure your proxy settings on a per-profile basis.
 Our YAML
 
 

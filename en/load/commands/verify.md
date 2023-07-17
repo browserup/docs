@@ -2,8 +2,8 @@
 title: verify
 ---
 
-When a BrowserUp profile is run, it runs inside a container--our
-custom-base, or a custom container based on our images.
+When a <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> profile is run, it runs inside a container--our
+standard image, or a custom container based on our custom-base image.
 
 The *command* itself is a bash command that executes _something_, such as
 a script, a JAR, a binary, compiled app, that you expect will create traffic.
@@ -16,10 +16,13 @@ the HAR (traffic capture).
 
 For example:
 
+[<img src="{{ site.baseurl }}/assets/images/cli/load-verify.png" width="1000"/>]({{ site.baseurl }}/assets/images/cli/load-verify.png)
+
+Verbose mode produces HAR (Traffic) output:
+
 ```bash
 verify -v "python3 selenium-test.py" --artifact-dir=.
 ```
-Produces:
 
 ```bash
 =================================

@@ -3,7 +3,7 @@ title: Reports
 key: load-reports
 ---
 
-BrowserUp provides a variety of standard load test reports.  A few examples:
+<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> provides a variety of standard load test reports.  A few examples:
 
 ## Summary Report
 

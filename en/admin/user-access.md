@@ -3,7 +3,7 @@ title: User Access
 key: user-access
 ---
 
-BrowserUp ships with integrated user access control.
+<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> ships with integrated user access control.
 
 ## Roles
 

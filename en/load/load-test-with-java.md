@@ -2,16 +2,16 @@
 title: Load Test With Java
 ---
 
-There are several ways to run a Java-based load test with BrowserUp.
+There are several ways to run a Java-based load test with <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>.
 
 1 - Running your plain Java code directly.
 
 If you have a code library that makes HTTP/Websocket requests, you can call
 your library directly to make requests on your behalf. For example, if you
 have an internal client library for a REST api, you can use your own library to
-generate load with BrowserUp while capturing your traffic.
+generate load with <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> while capturing your traffic.
 
-The key advantages to doing this with BrowserUp are:
+The key advantages to doing this with <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> are:
 * Full traffic capture
 * Full Reporting
 * Automatic, global distribution of load, as desired
@@ -35,7 +35,7 @@ run browser-based load without worrying about containers.
 * For other tools, you can install what you like in our custom image.
 
 ```bash
-browserup generate java
+browserup load init --java
 ```
 
 Our browserup/standard image ships with JavaScript, Java, Ruby and Python pre-installed.

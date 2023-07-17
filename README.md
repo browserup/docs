@@ -1,5 +1,5 @@
 
-The BrowserUp documentation is created with (Jekyll)[https://jekyllrb.com/]
+The <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> documentation is created with (Jekyll)[https://jekyllrb.com/]
 
 It is using the (TeXt Theme)[https://kitian616.github.io/jekyll-TeXt-theme/docs/en/i18n]
 

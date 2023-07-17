@@ -1,35 +1,43 @@
 ---
 title: Load Testing With PostMan
 ---
+To run a load test using your Postman, first install <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> per these instructions.
 
-Include Installation
+```bash
+npm install -g browserup-cli
+```
 
-Running a load test of your Postman collections is a straightforward way to learn about the performance a web application.  This approach is especially useful for API testing.
+```bash
+browserup load init --playwright
+```
 
-Reusing your Postman collections as a load test provides a great way to load test without repeating yourself. Postman for API load testing it is dry capital. A important programming is don't repeat yourself. By reusing Postman API tests for load testing you avoid repeating yourself maintaining a second implementation of your routes and their payloads.
+Create your collection of tests as normal in Postman
 
-In order to run a load test using your Postman, first install BrowserUp per these instructions.
+Export the collection to the working directory for your load test
 
-Next, run browserup init
+https://www.tutorialspoint.com/postman/postman_run_collections_using_newman.htm
 
-This will generate browserup.yaml  file. This file is your configuration for a browser up load test.
+Test out your collection [locally with newman](https://www.tutorialspoint.com/postman/postman_run_collections_using_newman.htm) to make sure it works as desired.
 
-Load testing with Postman is browser up uses PostMans <strong>newman</strong> test runner to run a PostMan Collection.
+Adjust your scenario's profile(s) to run the collection.
 
-So create a collection of tests in Postman
+```yaml
+scenario:
+  name: Newman
+  total_users: 20
+  profiles:
+    - name: Cart API
+      think_time: 10s
+      allocation: 50%
+      command: newman run postman_collections/cart-api.json
+```
 
-It can use that collection as your "iterationentrypoint" The iteration entry point starting point it's launched time bizarre up virtual user either eights or runs through your items.
-
-Test out your collection locally with newman to make sure it works as desired.
-
-Next run  browserup provision. This will provision a local environment in your docker environment.
+```bash
+browserup load start
+```
 
 This will launch a local load test own Docker environment.
 
-Next run
-
-browserup start
-
 Finally, log into the app and watch the reporting as your load test runs.
 
-Repeat, as needed, with a large-scale load test in Amazon AWS to really put your app through it's paces.
+Repeat, as needed, with a large-scale load test in Amazon AWS to really put your app through its paces.

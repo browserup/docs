@@ -2,7 +2,7 @@
 title: The BrowserUp Config Yaml Format
 ---
 
-In the command-line flow, BrowserUp load tests are defined in a YAML config file.
+In the command-line flow, <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> load tests are defined in a YAML config file.
 
 ```yaml
 scenario:
@@ -45,16 +45,17 @@ The stages define a duration, and type of stage for the load test.
 
 
 images:  [optional]
-: By default, your code is wrapped into a docker container running our custom-base image.
+: By default, your code is wrapped into a docker container running our standard image.
 : However, if you specify an image, you can use a custom image, based off our image, into which
 : you have pre-installed any of your own software that will be utilized for the load test.
 
-To specify a custom image, you need to create the image, and ensure it has been uploaded to a registry
-with builds for each architecture where it will run. This means, at minimum, you need to ensure
-the docker image is published in the AMD64 architecture which is used for linux cloud machines.
-For local docker runs, if you use mac, you should also build and push the Arm64 image as well.
+To specify a custom image, you need to create the image using our browserup/custom-base image as the FROM,
+and ensure it has been uploaded to a registry with builds for each architecture where it will run.
+This means, at minimum, you need to ensure the docker image is published in the AMD64 architecture
+which is used for linux cloud machines. For local docker runs, if you use mac, you should also build
+and push an Arm64 image as well.
 
-Images are referenced by *name* in BrowserUp, so if you specify a custom image in a profile, it should
+Images are referenced by *name* in <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>, so if you specify a custom image in a profile, it should
 reference the name in the browserup system.
 
 
@@ -70,7 +71,7 @@ inside our container will
 1-Run properly
 2-Cause traffic to occur
 
-The BrowserUp Command line utility's *verify* command lets you do this.
+The <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> Command line utility's *verify* command lets you do this.
 
 To verify things are working properly, from within the artifact_dir for your test, at the command line, run a command that
 you'd like execute succesfully within your container.
@@ -86,7 +87,7 @@ With the -v *verbose* argument, the output of the command will be captured and p
 as well as the full HAR file (traffic snapshot) that is captured.
 
 The HAR (HTTP Archive) file is a format used by chrome and other utilities to hold
-traffic captures. Internally, it is how BrowserUp holds traffic that will be used
+traffic captures. Internally, it is how <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> holds traffic that will be used
 for metrics.
 
 Without the -v, the verify command will still check for traffic, however it

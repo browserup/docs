@@ -3,7 +3,7 @@ title: Workspaces
 key: workspaces
 ---
 
-In BrowserUp, users, scenarios, tests, and data are segmented into Workspaces.
+In <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>, users, scenarios, tests, and data are segmented into Workspaces.
 
 A workspace is like a "mini-account" with separated data.
 

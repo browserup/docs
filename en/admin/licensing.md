@@ -3,7 +3,7 @@ title: Licensing
 key: licensing
 ---
 
-BrowserUp is a freemium product. You are free to use BrowserUp for load tests of
+<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> is a freemium product. You are free to use <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> for load tests of
 50 concurrent users total, or less, at any time.
 
 For larger tests, a license is required.

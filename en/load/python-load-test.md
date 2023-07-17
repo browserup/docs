@@ -1,7 +1,7 @@
 ---
 title: Load Test With Python
 ---
-BrowserUp can run Python based load tests.
+<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> can run Python based load tests.
 
 It can run:
 
@@ -13,5 +13,5 @@ It can run:
 The easiest way to get started is to generate a scaffold with a simple test:
 
 ```bash
-browserup generate python
+browserup load init --python
 ```

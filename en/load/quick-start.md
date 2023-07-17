@@ -6,16 +6,18 @@ redirect_from:
   - /
 ---
 
-The starting point for using BrowserUp is The BrowserUp Command Line Util. It:
-* Creates test configs (BrowserUp Yaml)
-* Launches (provision) the test cluster (locally, or in Amazon AWS)
-* Starts and Stops tests
+The <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> Command Line Util
+is the best way to get started quickly.
+
+* It Creates test configs (browserup.load.yaml)
+* It Launches (deploys) the test cluster (locally, or in Amazon AWS)
+* It Starts and Stops tests
 * And More
 
 [<img src="{{ site.baseurl }}/assets/images/load/cli-util.png" width="500"/>]({{ site.baseurl }}/assets/images/load/cli-util.png)
 
-Once the test cluster is running, you can log into the cluster's web UI and
-view your results, create reports administer other users, etc.
+Once we have the test cluster running, we can log into the cluster's web UI and
+view results, create reports, administer users, etc. Let's get started!
 
 [<img src="{{ site.baseurl }}/assets/images/load/screenshot.png" width="500"/>]({{ site.baseurl }}/assets/images/load/screenshot.png)
 
@@ -24,64 +26,65 @@ view your results, create reports administer other users, etc.
 #### Local Cluster
 
 * Docker Installed and Running (make sure it is current)
-* Mac Arm64 (M1/M2) or AMD64 or Linux (Windows *not* yet supported)
 * 32 GB Ram or more Recommended
 
 #### Cloud Cluster
 
 * Amazon AWS account
-* Local Mac Arm64 (M1/M2) or AMD64 or Linux to operate the BrowserUp Command line Util
+* Local Mac Arm64 (M1/M2) or AMD64 or Linux to operate the <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> Command line Util
 * Local Docker is not required for remote AWS execution, so CI/CD setup is simple
 
 ## Installation
 
-### Mac
-
 ```bash
-brew install -vd browserup/browserup-cli/browserup-cli
-```
-
-### Linux
-
-```bash
-sudo curl https://github.com/browserup/browserup/archive/browserup-cli.tar.gz | tar xvf - -C /usr/local/bin/
+npm install -g browserup-cli
 ```
 
 ## Creating your first test
 
 1. Generate a basic test scaffold in the current working dir:
 
+To see the list of test types with pre-canned examples:
+
 ```bash
-browserup generate ruby
+browserup load init -h
 ```
-Look in your working directory and you should see the test files,
-as well as a browserup.yaml. The browserup.yaml is your test config that defines what
-will be run for this test. Try ```cat browserup.yaml``` to see what's in it.
+
+Let's make a test with JS and Playwright and also PostMan:
+
+```bash
+browserup load init --playwright-js --postman
+```
+You should see the test files in your working directory as well as a
+browserup.load.yaml. The browserup.load.yaml is your test config that defines what
+will be run for this test. Run ```cat browserup.load.yaml``` to see what's in it.
+
 
 2. Run your test!
 
 ```bash
-browserup start
+browserup load start
 ```
 
-The start command will run the `provision` command if your cluster is not already running.
+The start command will run the `deploy` command if your cluster is not already running.
 This will take a couple minutes to start, and launch your test.
 
 When the start command finishes, you are running a test and collecting live stats!
 
 Let's take a look!
 
-### Inspecting the Test
+### Inspecting the Test Run
 <br>
 Visit  [http://localhost:6730/](http://localhost:6730/)
 <br>
 <br>
 
+
 *Login*
 
 **username:** superadmin
 
-**password:** ChangeMe!
+**password:** changeme!
 <br>
 <br>
 1. Click on Reports -> Summary in the left sidebar
@@ -94,7 +97,7 @@ Visit  [http://localhost:6730/](http://localhost:6730/)
 
 This quick start focused on a local Docker run, but the process for a
 remote run is the same, except you'll need [AWS credentials](configuring-aws-credentials)
-defined, and to set in your config:
+defined, and to set in your browserup.load.yaml:
 ```yaml
 cluster_type: aws
 ```

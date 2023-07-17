@@ -37,8 +37,8 @@ iteration_delay:
 : The amount of time to sleep between each iteration. The script
 
 region:
-: BrowserUp allows distributed testing out of the box by selecting the region from which each profile will run.
-: BrowserUp has two modes: Local Docker runs, and Amazon AWS cloud runs.
+: <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> allows distributed testing out of the box by selecting the region from which each profile will run.
+: <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> has two modes: Local Docker runs, and Amazon AWS cloud runs.
 : The region setting is ignored for local runs.
 
 vus_per_vcpu:

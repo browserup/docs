@@ -94,7 +94,7 @@ We think the load testing tool the world needs load testing for developers, in t
 </ul>
 
 
-#### Who is and isn't a great fit for the BrowserUp approach?
+#### Who is and isn't a great fit for the <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> approach?
 
 Companies at the extremes of the growth spectrum might not be an ideal fit.
 

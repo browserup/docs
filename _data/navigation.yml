@@ -36,6 +36,10 @@ docs-en:
         url:    /en/load/python-load-test
       - title:  Internet Of Things
         url:    /en/load/load-test-Internet-Of-Things
+      - title:  Browser Core Web Vitals
+        url:    /en/load/browser-core-vitals-load-test
+      - title:  Load Test with C# (DotNet)
+        url:    /en/load/load-testing-with-c-sharp
       - title:  Load Test with Selenium
         url:    /en/load/load-test-with-selenium
       - title:  Load Testing Websockets
@@ -52,22 +56,20 @@ docs-en:
 
   - title:      Command Line Util
     children:
-      - title:  provision
-        url:    /en/load/commands/provision
-      - title:  start
+      - title:  load start
         url:    /en/load/commands/start
-      - title:  stop
+      - title:  load stop
         url:    /en/load/commands/stop
-      - title:  deprovision
-        url:    /en/load/commands/deprovision
-      - title: help
-        url: /en/load/commands/help
-      - title: verify
+      - title: load verify
         url: /en/load/commands/verify
-      - title: upload_license
-        url: /en/load/commands/upload_license
-      - title: new
-        url: /en/load/commands/new
+      - title: upload-license
+        url: /en/cluster/commands/upload_license
+      - title: load init
+        url: /en/load/commands/init
+      - title:  cluster deploy
+        url:    /en/cluster/commands/deploy
+      - title:  cluster destroy
+        url:    /en/cluster/commands/destroy
 
   - title:      Admin
     children:

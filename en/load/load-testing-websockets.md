@@ -2,7 +2,7 @@
 title: Load Testing Websockets
 ---
 
-Load testing websockets using BrowserUp can be done in a few ways.
+Load testing websockets using <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> can be done in a few ways.
 
 ## Browser Automation
 
@@ -19,6 +19,6 @@ This approach offers a number of advantages:
 
 ## Other Supported Approaches
 
-* Make websocket requests programmatically with a language in our standard image: Javascript, Ruby, Python, Java, etc.
+* Make websocket requests programmatically with a language in our standard image: Javascript, C#, Ruby, Python, Java, etc.
 * Run PostMan requests, which now support websockets, using our standard image
 * Create a custom docker image based on ours but with your language and libraries of choice driving the websocket requests and use _that_

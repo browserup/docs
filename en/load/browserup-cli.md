@@ -1,29 +1,30 @@
 ---
-title: BrowserUp Command Line Application
+title: <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> Command Line Application
 ---
 
-The command line app (CLI) is the first stop to getting started with BrowserUp.
+The command line app (CLI) is the first stop to getting started with <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>.
 
 The cli allows you to:
-* Provision a cluster
+* Deploy a cluster
 * Run Tests
 
 * Create tests
   - The CLI can also be used to verify scripts in the containerized environment
-  - Generate test configs (browserup.yaml) for various
+  - Generate test configs (browserup.load.yaml) for various
 
 ## Commands
 
 ### Verifying a test command
 
-When a BrowserUp profile is run, it runs inside a container--our
+When each <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> profile is run, it runs inside a container using our
 standard image, or a custom container you created based on our custom-base image.
 
 The *command* itself is a bash command that executes _something_, such as
 a script, a JAR, a binary, compiled app, that you expect will create traffic.
 
-The verify command lets you try out your command, and will pass if it causes
-traffic to be detected.
+The *verify* command lets you a command in an instance of our container
+with your files from the working directory added.
+The command will pass if it causes traffic to be detected.
 
 Pass the -v (verbose) argument if you'd like to see the command output, as well as
 the HAR (traffic capture).

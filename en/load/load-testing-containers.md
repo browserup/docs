@@ -2,7 +2,7 @@
 title: Load Testing Containers
 ---
 
-BrowserUp utilizes two different container types for load testing.
+<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> utilizes two different container types for load testing.
 These images, which is built off a Debian Bullseye base, have our traffic-capturing code built in and pre-configured.
 
 ## Standard Full
@@ -26,7 +26,7 @@ browserup/standard
 ## Custom Container
 
 However, it may be that you'd like to run a custom container with your own
-libraries, dependencies, and code. BrowserUp supports custom OCI/Docker container-based
+libraries, dependencies, and code. <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> supports custom OCI/Docker container-based
 load testing. To set this up, you'll build your image on top of our [browserup/custom-base](https://hub.docker.com/r/browserup/custom-base)
 image.
 
@@ -52,7 +52,7 @@ AWS registry.
 
 ## Overview - how it works:
 
-- BrowserUp takes the artifact_dir, if specified in the profile, and uploads it to our container
+- <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> takes the artifact_dir, if specified in the profile, and uploads it to our container
 -
 - If the image is not specified, it uses the default *standard* image, so the artifact_dir key __must__ be specified
   as otherwise, there's not going to be something to run for the test.
