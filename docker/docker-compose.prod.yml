@@ -6,7 +6,7 @@ services:
     environment:
       - JEKYLL_ENV
     ports:
-      - 4000:4000
+      - 4040:4000
     container_name: jekyll-text-theme_build
     volumes:
       - ..:/usr/src/app

@@ -1,5 +1,5 @@
 ---
-title: <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> Command Line Application
+title: BrowserUp Command Line Application
 ---
 
 The command line app (CLI) is the first stop to getting started with <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>.

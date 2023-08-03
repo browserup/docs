@@ -12,8 +12,14 @@ bundle
 ### To View the documentation locally:
 
 ```bash
-bundle exec jekyll serve --livereload
+bundle exec jekyll serve --port 4040 --livereload
 ```
+
+
+Note: this will start on port 4040 as the default port 4000 is used by another app.
+
+
+
 
 Overview:
 

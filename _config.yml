@@ -20,7 +20,7 @@ text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : /docs
-title   :
+logo   : '<img src="/docs/assets/images/logo/logo.png" style="width: 130px; height: 25px; margin: 10px 0px 10px 0px;">'
 company_name: BrowserUp, Inc.
 
 supported_load_test_types: JavaScript, Java, Ruby, Python, PostMan, PlayWright, Custom
@@ -183,11 +183,11 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: false # false (default), "google", "custom"
+  provider: google # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
+    tracking_id : UA-59824578-1  # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 

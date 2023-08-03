@@ -26,7 +26,7 @@ Trading labor costs order to lower server hardware costs made sense!
 So HTTP-protocol level testing became the dominant load testing paradigm.
 Dynamic session variables and cookies are handled through correlation, a ~~torture method~~ technique to mimic browser requests.
 
-What are the costs of our tradeoff?
+What are the costs of that tradeoff?
 
 A labor-intensive process does __not__ lend itself to CI.
 
@@ -41,28 +41,27 @@ Maintaining separate implementations comes at a cost. With every new feature, pa
 * Often, this delays our releases by a full Sprint or more at most organizations.
 
 
-To summarize the current approach:
-* It trades labor costs to optimize hardware costs
-* It requires multiple experts, or domains of expertise
-* It requires that an additional implementation of page-walking logic
-* It slows releases
-* It drives up labor costs
+To summarize, the old way:
+* Trades labor costs to optimize hardware costs
+* Requires multiple experts, or domains of expertise
+* Requires that an additional implementation of page-walking logic
+* Slows releases
+* Drives up labor costs
 
-<h3>Today's World</h3>
+<h3>In the New World</h3>
 
 * Server time no longer requires "hosting costs."
 * Cloud time is rentable, by the second, for pennies.
-* Servers are many times more powerful.
-* Rising demand and a skills shortage has driven labor costs much higher.
+* Rising demand and a skills shortage has raised labor costs.
 * Testers already maintain page objects that hold the logic for how to walk a website.
 
-Hardware is cheap, _people_ are expensive.
+Now, servers are cheap, _people_ are expensive.
 
 Trading labor to save ~server~ *cloud* costs is _now_ a bad trade.
 
 ## The future of load testing
 
-Let's imagine what an ideal load testing tool would look like.
+Now that things have changed, what would an ideal load testing tool would look like.
 
 It would reuse our page walking logic so that we only had a single implementation.
 
@@ -79,16 +78,16 @@ REST API client.
 
 There __are__ tools which can capture or import traffic from functional tests, but they recommend you then maintain the outputted HTTP-level script.
 That means you're back to maintaining two implementations of your page walking logic. That's the problem we want to avoid, because
-you have to re-test, re-update an re-work for every minute change.
+you have to re-test, re-update an re-work for every little change.
 
-We think the load testing tool the world needs load testing for developers, in the same language as their app.
+What would a better solution looks like?
 
 <ul>
- 	<li>Instead of <em>importing</em>we <strong>run</strong> your code, so programmatic logic and smarter scripts are possible.</li>
- 	<li>The code can live right in your repo if you want--in your language of choice.</li>
-  <li>For browser based tests, reuse your page objects for load testing. Or your functional and regression tests.</li>
- 	<li>Your code, so you can use your internal libraries.</li>
-  <li>You can write code directly to talk to your API, but have the traffic captured with full reporting and metrics</li>
+ 	<li>Instead of <em>importing,</em><strong>run</strong> your code, so programmatic logic and smarter scripts are possible.</li>
+ 	<li>The code should live right in your repo if you want--in your language of choice.</li>
+  <li>For browser tests, reuse your page objects for load testing. Or your end-to-end tests.</li>
+ 	<li>It should let you call your own internal libraries.</li>
+  <li>Have the traffic data captured with full reporting and metrics</li>
  	<li>Execution within your own AWS account, so there's no data privacy issues.</li>
  	<li>Anything that can make requests, can drive load</li>
 </ul>
@@ -99,9 +98,6 @@ We think the load testing tool the world needs load testing for developers, in t
 Companies at the extremes of the growth spectrum might not be an ideal fit.
 
 At (large) Google-scale, it is likely that trading labor for machine efficiency still makes sense.
-
-At (small) startup scale, load testing is often a one-off and not a rinse-and-repeat process yet.
-Although, for startups, our 50 freemium users could be a very cost-effective way to get a sanity check.
 
 If you don't have a web _application_, you can probably get by with something simple, like Apache bench.
 

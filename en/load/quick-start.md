@@ -10,41 +10,48 @@ The <span style="font-weight: bold; color: #de792b;">Browser</span><span style="
 is the best way to get started quickly.
 
 * It Creates test configs (browserup.load.yaml)
-* It Launches (deploys) the test cluster (locally, or in Amazon AWS)
-* It Starts and Stops tests
-* And More
+* It Launches (deploys) the test cluster (local docker, or Amazon AWS)
+* It Starts and Stops tests, and more
 
-[<img src="{{ site.baseurl }}/assets/images/load/cli-util.png" width="500"/>]({{ site.baseurl }}/assets/images/load/cli-util.png)
-
-Once we have the test cluster running, we can log into the cluster's web UI and
-view results, create reports, administer users, etc. Let's get started!
+Once the test cluster is running, we can log into the cluster's web UI and view results, create reports, administer users, etc.
 
 [<img src="{{ site.baseurl }}/assets/images/load/screenshot.png" width="500"/>]({{ site.baseurl }}/assets/images/load/screenshot.png)
 
+Let's get started!
+
 ## Prerequisites
 
-#### Local Cluster
+The CLI is installed via [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
+If Javascript is not your thing, don't worry, you don't need to know Javascript. This is just
+how we install the CLI.
+
+Local Cluster
 * Docker Installed and Running (make sure it is current)
 * 32 GB Ram or more Recommended
 
-#### Cloud Cluster
+Cloud Cluster
 
 * Amazon AWS account
-* Local Mac Arm64 (M1/M2) or AMD64 or Linux to operate the <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> Command line Util
-* Local Docker is not required for remote AWS execution, so CI/CD setup is simple
+* Windows, Mac or Linux to operate the <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> Command line Util
+* Local Docker is not required for remote AWS execution, so CI/CD setup can remain simple
 
 ## Installation
 
 ```bash
-npm install -g browserup-cli
+npm install -g browserup
 ```
 
 ## Creating your first test
 
-1. Generate a basic test scaffold in the current working dir:
+1.Generate a basic test scaffold in the current working dir:
 
-To see the list of test types with pre-canned examples:
+```bash
+mkdir demo
+cd demo
+```
+
+To see the list of test types with pre-canned examples, let's call init with -h, for help:
 
 ```bash
 browserup load init -h
@@ -56,17 +63,16 @@ Let's make a test with JS and Playwright and also PostMan:
 browserup load init --playwright-js --postman
 ```
 You should see the test files in your working directory as well as a
-browserup.load.yaml. The browserup.load.yaml is your test config that defines what
+browserup.load.yaml. The browserup.load.yaml is your test config--it defines what
 will be run for this test. Run ```cat browserup.load.yaml``` to see what's in it.
-
 
 2. Run your test!
 
 ```bash
-browserup load start
+browserup load start -d
 ```
 
-The start command will run the `deploy` command if your cluster is not already running.
+The start command, when passed -d will run the `deploy` command if your cluster is not already running.
 This will take a couple minutes to start, and launch your test.
 
 When the start command finishes, you are running a test and collecting live stats!
