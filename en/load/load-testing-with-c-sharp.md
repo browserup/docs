@@ -43,7 +43,7 @@ Our standard image supports C# load tests using a REST API client. To generate a
 init command as follows:
 
 ```bash
-browserup load init --selenium-csharp
+browserup load init --csharp
 ```
 
 Some points to keep in mind:

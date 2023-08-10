@@ -1,5 +1,3 @@
-console.log('hi');
-
 pages = [
     {%- for _page in site.pages -%}
         {%- if _page.title != blank -%}
@@ -17,6 +15,3 @@ window.TEXT_SEARCH_DATA={
   'posts': [],
   'pages': pages
 };
-
-
-console.log(window.TEXT_SEARCH_DATA);

@@ -30,30 +30,30 @@ own proxy config.
 
 ### Built-in settings
 
-: filter_images:
+* filter_images:
 Filter requests for images. When true, this causes image requests to be ignored
 and not sent to the server.
 
-: filter_multimedia:
+* filter_multimedia:
 Filter requests for multimedia. When true, this causes multimedia requests to be ignored
 and not sent to the server.
 
-: filter_domains:
+* filter_domains:
 Filter requests for domains block the configured domain entirely.
 
-: filter_common_third_party_js:
+* filter_common_third_party_js:
 This setting uses our best-guess for popular, known third party javascript. The
 setting may not cover every possibility, so it is good to review your apps requests.
 
-: restrict_to_domains_matching:
+* restrict_to_domains_matching:
 This setting _only_ allows through requests to domains that match the specified string.
 This works well for internal apps that are not allowed make requests to third parties.
 
-: use_custom_config:
+* use_custom_config:
 When true, all other settings are *ignored* except the value in *custom_config* which
 is expected to be an mitmproxy config.
 
-: custom_config:
+* custom_config:
 A config for our mitmproxy fork to use. Note that when a custom config is used,
 all other config settings are ignored.
 

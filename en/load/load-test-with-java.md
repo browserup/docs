@@ -4,6 +4,9 @@ title: Load Test With Java
 
 There are several ways to run a Java-based load test with <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>.
 
+Our browserup/standard image ships with Java pre-installed.
+
+
 1 - Running your plain Java code directly.
 
 If you have a code library that makes HTTP/Websocket requests, you can call
@@ -26,29 +29,30 @@ built-in Java (OpenJDK 17)
 * Use a custom image based on our browserup/custom-base. With a custom image, you are free to install whatever dependencies
 you like into the image, as well as to change the Java version or tweak the image in other ways.
 
+```bash
+browserup load init --java
+```
 
 2 - Running a browser-based test in Selenium or other Java-driven tool.
 
 * For Selenium, our standard image features a built-in chromium install, so you can
 run browser-based load without worrying about containers.
 
-* For other tools, you can install what you like in our custom image.
+To create an example selenium-based test, run:
 
 ```bash
-browserup load init --java
+browserup load init --selenium-java
 ```
 
-Our browserup/standard image ships with JavaScript, Java, Ruby and Python pre-installed.
+The generated test will need to be compiled. Within the generated project folder, view the selenium-java-README.md for instructions on how to compile and run your test,
 
-One advantage of using our pre-built image is that it can run other types of tests as well.
-
-{% include browserup/config-supports-all-test-types.html %}
-
-2 - Create a Custom Image based on browserup/custom-base, with your own dependencies installed. With this approach,
+3 - Create a Custom Image based on browserup/custom-base, with your own dependencies installed. With this approach,
 you won't necessarily need to create a FAT jar (although that's fine as well).
 
-At present, the base for the custom image must be our browserup/custom-base image, which is built on Debian Bullseye Slim.
+At present, the base for the custom image must be our browserup/custom-base image, which is built on Debian Bookworm Slim.
 
 So simply start your Dockerfile with:
+browserup/custom-base
 
+Then install your dependencies as needed.
 

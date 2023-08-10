@@ -2,107 +2,84 @@
 title: Manifesto
 ---
 
-We propose: For most organizations, there's a better way to load test!
+For most organizations, there's a better way to load test!
 
-## The Origins of Load Testing
+The way we load testing is done today made sense for the time, but it's time to rethink it.
 
-Let's review the previous load testing paradigm and why it made sense for its time.
-Then let's  do a <strong>first principles rethink</strong> of modern load testing for today's world.
+
+## A Brief History of Load Testing
 
 <h3>Late 1990s</h3>
-Around 1996, as commerce slowly trickled online, there was a need to know if a web application would scale _before_ it was released.
+As commerce slowly trickled online, companies needed to know if a web application would scale _before_ it was released.
 
-To a 90's engineer, a reasonable first proposal for simulating browsers hitting your site would be _to automate many browsers hitting your site_.
-In 1996, this would mean buying servers powerful enough to run many web browsers and paying monthly datacenter bills.
-Servers weren't powerful, so setting up, hosting, and running this could easily cost hundreds of thousands of dollars.
+A reasonable first proposal for scalability testing was _to make many browsers hit your site_.
+In 1996, this meant buying servers powerful enough to run many automated web browsers and paying monthly datacenter bills.
+Servers weren't powerful, so setting up, monthly hosting, and running this could cost hundreds of thousands of dollars.
 
-Labor was cheap, _hardware_ was expensive.
+### Labor was cheap, _hardware_ was expensive.
 
-In 1997, hardware was _very_ expensive, time-consuming and cumbersome to source and maintain.
-Relative to this, salaries were far less expensive.
-HTTP server traffic was simple and transactional then.
-Trading labor costs order to lower server hardware costs made sense!
+Hardware was _very_ expensive, time-consuming and cumbersome to source and maintain. In comparison, salaries were cheaper.
+HTTP server traffic was simple and transactional, so it was easy to write scripts to mimic browser requests.
+
+Trading labor costs order to lower hardware costs was a good trade!
 
 So HTTP-protocol level testing became the dominant load testing paradigm.
-Dynamic session variables and cookies are handled through correlation, a ~~torture method~~ technique to mimic browser requests.
+Dynamic session variables and cookies were handled through correlation, a ~~torture method~~ technique to mimic browser requests.
 
-What are the costs of that tradeoff?
+What are the downside of using labor hours to create highly efficient scripts to reduce machine-costs?
 
-A labor-intensive process does __not__ lend itself to CI.
+Labor-intensive process does __not__ lend itself to CI. A human has to be in the loop to create and maintain the scripts.
 
 * Because HTTP level scripts go stale when an application is updated, creating or capturing scripts for code changes requires labor
-for every change. This slows releases and shifts testing later in the development cycle. Load testing often
-isn't "finished" until a full sprint or more after the feature is built.
+for every change. This slows releases and shifts testing later in the development cycle.
 * Scripting and correlating takes labor hours, and drives up costs
-* This approach requires a separate toolset and a separate set of expertise.
-* We maintain two separate implementations of page-walking logic for our web application. One in the load testing tool, and in another in our system, acceptance, and integration tests.
-* The Page Object pattern helped [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) up the repetition in our test scripts. However, it didn't solve the load test implementation.
-Maintaining separate implementations comes at a cost. With every new feature, page-logic must be implemented twice
-* Often, this delays our releases by a full Sprint or more at most organizations.
+* A separate toolset and set of expertise is required.
+* We maintain *two* separate implementations of page-walking logic. One in the load testing tool, and in another in our system, acceptance, and integration tests.
+With every new feature, page-logic must be implemented twice
+* Typically, this delays our releases, often *by a full Sprint or more*.
 
+Things have changed...
 
-To summarize, the old way:
-* Trades labor costs to optimize hardware costs
-* Requires multiple experts, or domains of expertise
-* Requires that an additional implementation of page-walking logic
-* Slows releases
-* Drives up labor costs
-
-<h3>In the New World</h3>
-
-* Server time no longer requires "hosting costs."
+* The cloud means server time no longer requires "hosting costs."
 * Cloud time is rentable, by the second, for pennies.
 * Rising demand and a skills shortage has raised labor costs.
-* Testers already maintain page objects that hold the logic for how to walk a website.
+* Testers often maintain page object libraries that hold the logic for how to walk a website.
+* For REST APIs, we have client libraries or postman collections that hold the logic for how to talk to our API's.
+* Servers are cheap, _people_ are expensive.
 
-Now, servers are cheap, _people_ are expensive.
-
-Trading labor to save ~server~ *cloud* costs is _now_ a bad trade.
+Trading labor to save ~server~ *cloud* costs has become a _bad_ tradeoff.
 
 ## The future of load testing
 
-Now that things have changed, what would an ideal load testing tool would look like.
+What would an ideal load testing tool for today's world look like?
+It would:
+* reuse our page walking logic so that we only had a single implementation. For API tests,
+* reuse our REST API client, or Postman libraries.
+* work with our language of choice and not force a new tool or language.
 
-It would reuse our page walking logic so that we only had a single implementation.
+It _wouldn't_ *require* HTTP level playback, because this forces a brittle, low-level understanding and implementation of our app's requests.
+We don't want the extra headaches that come from correlation.
 
-It would work with our code and not force a new tool or language. Ideally it could be written in the same code our application's tests are written in. This would lower the knowledge required to maintain our app.
-
-It _wouldn't_ require HTTP level playback, because this forces us to test with a brittle, bare-metal understanding of our apps requests. We don't want the extra headaches that come from correlation.
-
-We don't want the inherent staleness of HTTP-level snapshots.
+We don't want the staleness of HTTP-protocol *snapshots*.
 
 We want to maintain one "source of truth" for talking to our REST API's, rather than two.
 
-To rid ourselves of these problems, we want to avoid maintaining a "snapshot" of browser requests, or a second implementation of our
-REST API client.
-
 There __are__ tools which can capture or import traffic from functional tests, but they recommend you then maintain the outputted HTTP-level script.
-That means you're back to maintaining two implementations of your page walking logic. That's the problem we want to avoid, because
-you have to re-test, re-update an re-work for every little change.
+That means you're back to maintaining *two* implementations of your page walking logic. That's the problem we want to avoid, because
+you have to re-update, re-test, and re-work for every change.
 
-What would a better solution looks like?
+We think we have a better approach with BrowserUp. What does that look like?
 
 <ul>
  	<li>Instead of <em>importing,</em><strong>run</strong> your code, so programmatic logic and smarter scripts are possible.</li>
- 	<li>The code should live right in your repo if you want--in your language of choice.</li>
-  <li>For browser tests, reuse your page objects for load testing. Or your end-to-end tests.</li>
- 	<li>It should let you call your own internal libraries.</li>
-  <li>Have the traffic data captured with full reporting and metrics</li>
- 	<li>Execution within your own AWS account, so there's no data privacy issues.</li>
- 	<li>Anything that can make requests, can drive load</li>
+ 	<li>The code can live right in your repo if you want--in your language of choice.</li>
+  <li>For browser tests, reuse your page objects libraries for load testing. Or your end-to-end tests.</li>
+  <li>For API tests, reuse your postman libraries, or your own REST API client libraries.</li>
+ 	<li>Traffic is captured with full reporting and metrics</li>
+ 	<li>Execute in your own AWS account, so there's no data privacy issues.</li>
+ 	<li>Anything that makes requests, can drive load!</li>
 </ul>
 
+Get Started Today!
 
-#### Who is and isn't a great fit for the <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> approach?
-
-Companies at the extremes of the growth spectrum might not be an ideal fit.
-
-At (large) Google-scale, it is likely that trading labor for machine efficiency still makes sense.
-
-If you don't have a web _application_, you can probably get by with something simple, like Apache bench.
-
-We think our approach is ideal for mature testing organizations, testing complex web apps.
-
-In our surveys, we found most load testing isn't completed until an entire sprint after the other testing is "done"
-because the maintenance and scripting take longer. Where this is true, we think you can
-release well-tested software a sprint sooner with our approach.
+[Try our QuickStart!](quick-start.html)

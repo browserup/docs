@@ -3,7 +3,7 @@ title: Load Testing Containers
 ---
 
 <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> utilizes two different container types for load testing.
-These images, which is built off a Debian Bullseye base, have our traffic-capturing code built in and pre-configured.
+These images, which is built off a Debian Bookworm base, have our traffic-capturing code built in and pre-configured.
 
 ## Standard Full
 

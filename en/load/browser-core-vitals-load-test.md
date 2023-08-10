@@ -1,4 +1,8 @@
-# Core Web Vitals
+---
+title: Browser Core Web Vitals
+---
+
+#### Getting Browser Core Web Vitals During Load Tests
 
 BrowserUp's instrumented container approach allows for the easy collection of Core Vitals data from the browser.
 This data can be used to measure the performance of your application and to identify opportunities for improvement.
@@ -11,7 +15,7 @@ Also, the collection does not require the use of any special libraries or framew
 customized browsers.
 
 
-### What are Browser Core Web Vitals?
+### What are Core Web Vitals?
 
 [Core Web Vitals ](https://developers.google.com/search/docs/appearance/core-web-vitals)are a set of metrics that Google uses to measure the user experience of a web page in the browser.
 Core vitals help understand the front-end user experience of a web page.
@@ -35,7 +39,7 @@ Starting March 2024, Interaction to Next Paint (INP) will replace FID as a Core 
 Measures visual stability. To provide a good user experience, strive to have a CLS score of less than 0.1.
 
 
-### Where can I see Core Web Vitals data in BrowserUp?
+### Where can I see Core Web Vitals?
 
 In the BrowserUp web UI, core vitals are found on the *Browser Report*,
 which is available in the *Reports Menu* in the left-hand sidebar.

@@ -29,9 +29,14 @@ scenario:
 browserup load start -d
 ```
 
-This will launch a local load test in your own Docker environment.
+This will launch a local load test in your Docker environment.
 
-Finally, log into the app and watch the reporting as your load test runs.  Full instructions
-
+Finally, log into the app and watch the reporting as your load test runs.
 
 Repeat, as needed, with a large-scale load test in Amazon AWS to really put your app through its paces.
+
+
+## Hoppscotch (PostMan Alternative)
+
+BrowserUp also ships [Hoppscotch](https://docs.hoppscotch.io/documentation/clients/cli)
+in the standard image. Hoppscotch is an open-source alternative to PostMan that offers similar features.

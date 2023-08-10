@@ -18,21 +18,24 @@ What do we mean by "your code"?
 The easiest way to get started with a selenium test is to generate a scaffold for the
 language you would like to use.
 
-There are two main ways to use Selenium and Java in <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>
-
-1 - Using our standard image, and built-in Java with a fat JAR.
+The BrowserUp init command offers a number of options for generating a scaffold for your test.
 
 ```bash
-browserup load init --java
+browserup load init --help
 ```
 
-Our browserup/standard image ships with JavaScript, Java, Ruby and Python pre-installed.
+<br>
+Although you can use any language you like, we have provided scaffolds for the following languages:
 
-One advantage of using our pre-built image is that it can run other types of tests as well.
+  **--selenium-js**       - Init a sample script with Selenium using JavaScript
 
-{% include browserup/config-supports-all-test-types.html %}
+  **--selenium-java**     - Init a sample script with Selenium using Java
 
-2 - Create a Custom Image based on ours, with your own dependencies installed. With this approach,
-you won't necessarily need to create a FAT jar (although that's fine as well).
+  **--selenium-python**   - Init a sample script with Selenium using Python
 
-At present, the base for the custom image must be our custom-base image, which is built on Debian Bookworm.
+  **--selenium-ruby**     - Init a sample script with Selenium using Ruby
+
+  **--selenium-csharp**   - Init a sample dotnet solution with C#. Requires compilation.
+
+
+

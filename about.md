@@ -30,15 +30,15 @@ sidebar:
 
 <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span>'s mission is to improve the software development lifecycle.
 
-With that goal in mind, we set out to provide a modern spin on the idea of load testing.
+With that in mind, we set out to build a modern spin on the idea of load testing.
 
-To get an idea of how we do that, check out our Load Test Manifesto.
+To get an idea of how we do that, check out our [Load Test Manifesto](en/load/manifesto.html).
 
 
 ### Who are we?
 
-<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> is a US C corp founded by Eric Beland.
+<span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> is a Boston area US C Corp headquartered in Natick, Massachusetts.
 
-Eric previously ran a load test consultancy. He's run load tests, trained, and
-consulted on load testing for Fortune 500 companies like American Airlines,
-H&R Block and Intel, as well as numerous small businesses.
+BrowserUp was founded by Eric Beland. Eric previously ran a load test consultancy. He's run load tests, trained, and
+consulted on load testing around the world, for Fortune 500 companies like American Airlines,
+H&R Block and Intel and many more.

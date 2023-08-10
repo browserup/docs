@@ -5,126 +5,128 @@ header:
   - title:      About
     url:        /about.html
   - title:      "Manifesto"
-    url:        /en/load/manifesto
-
+    url:        /en/load/manifesto.html
 
 docs-en:
   - title:      Getting Started
     children:
       - title:  "Quick Start"
-        url:    /en/load/quick-start
+        url:    /en/load/quick-start.html
       - title:  "Why BrowserUp?"
-        url:    /en/load/why-browserup
-      - title: Test Config
-        url: /en/load/test-config
+        url:    /en/load/why-browserup.html
       - title:  Coding your Load Test
-        url: /en/load/coding-for-the-load-test
+        url: /en/load/coding-for-the-load-test.html
       - title: Proxy Config
-        url: /en/load/proxy-config
+        url: /en/load/proxy-config.html
+      - title: Load Test Config
+        url: /en/load/browserup-load-yaml.html
+      - title: BrowserUp API
+        url: /en/load/browserup-api.html
+
 
   - title:      Load Test
     children:
       - title:  Playwright Load Test
-        url:    /en/load/playwright-load-test
+        url:    /en/load/playwright-load-test.html
       - title:  Postman Load Test
-        url:    /en/load/postman-load-test
+        url:    /en/load/postman-load-test.html
       - title:  Ruby Load Test
-        url:    /en/load/ruby-load-test
+        url:    /en/load/ruby-load-test.html
       - title:  Java Load Test
-        url:    /en/load/load-test-with-java
+        url:    /en/load/load-test-with-java.html
       - title:  Python Load Test
-        url:    /en/load/python-load-test
+        url:    /en/load/python-load-test.html
       - title:  Internet Of Things
-        url:    /en/load/load-test-Internet-Of-Things
+        url:    /en/load/load-test-Internet-Of-Things.html
       - title:  Browser Core Web Vitals
-        url:    /en/load/browser-core-vitals-load-test
+        url:    /en/load/browser-core-vitals-load-test.html
       - title:  Load Test with C# (DotNet)
-        url:    /en/load/load-testing-with-c-sharp
+        url:    /en/load/load-testing-with-c-sharp.html
       - title:  Load Test with Selenium
-        url:    /en/load/load-test-with-selenium
+        url:    /en/load/load-test-with-selenium.html
       - title:  Load Testing Websockets
-        url:    /en/load/load-testing-websockets
+        url:    /en/load/load-testing-websockets.html
       - title:  Load Testing Containers
-        url:    /en/load/load-test-containers
+        url:    /en/load/load-test-containers.html
 
   - title:      Reporting
     children:
       - title:  Reports
-        url:    /en/load/reports
+        url:    /en/load/reports.html
       - title:  Studio
-        url:    /en/load/report-studio
+        url:    /en/load/report-studio.html
 
   - title:      Command Line Util
     children:
       - title:  load start
-        url:    /en/load/commands/start
+        url:    /en/load/commands/start.html
       - title:  load stop
-        url:    /en/load/commands/stop
+        url:    /en/load/commands/stop.html
       - title: load verify
-        url: /en/load/commands/verify
-      - title: upload-license
-        url: /en/cluster/commands/upload_license
+        url: /en/load/commands/verify.html
       - title: load init
-        url: /en/load/commands/init
+        url: /en/load/commands/init.html
       - title:  cluster deploy
-        url:    /en/cluster/commands/deploy
+        url:    /en/cluster/commands/deploy.html
       - title:  cluster destroy
-        url:    /en/cluster/commands/destroy
+        url:    /en/cluster/commands/destroy.html
+      - title: cluster upload-license
+        url: /en/cluster/commands/upload_license.html
 
   - title:      Admin
     children:
       - title:  Audit Logs
-        url:    /en/admin/audit-logs
+        url:    /en/admin/audit-logs.html
       - title:  User Access
-        url:    /en/admin/user-access
+        url:    /en/admin/user-access.html
       - title:  Workspaces
-        url:    /en/admin/workspaces
+        url:    /en/admin/workspaces.html
       - title:  Licensing
-        url:    /en/admin/licensing
+        url:    /en/admin/licensing.html
       - title:  Health check
-        url:    /en/admin/health-check
+        url:    /en/admin/health-check.html
 
 #  - title:      Languages
 #    children:
 #      - title:  中文
-#        url:    /docs/zh/quick-start
+#        url:    /docs/zh/quick-start.html
 
 #
 #docs-zh:
 #  - title:      开始
 #    children:
 #      - title:  快速开始
-#        url:    /docs/zh/quick-start
+#        url:    /docs/zh/quick-start.html
 #      - title:  从 1.x 升级到 2.x
-#        url:    /docs/zh/update-from-1-to-2
+#        url:    /docs/zh/update-from-1-to-2.html
 #  - title:      定制
 #    children:
 #      - title:  配置
-#        url:    /docs/zh/configuration
+#        url:    /docs/zh/configuration.html
 #      - title:  导航栏
-#        url:    /docs/zh/navigation
+#        url:    /docs/zh/navigation.html
 #      - title:  布局
-#        url:    /docs/zh/layouts
+#        url:    /docs/zh/layouts.html
 #      - title:  Logo 和 Favicon
-#        url:    /docs/zh/logo-and-favicon
+#        url:    /docs/zh/logo-and-favicon.html
 #      - title:  作者
-#        url:    /docs/zh/authors
+#        url:    /docs/zh/authors.html
 #      - title:  国际化
-#        url:    /docs/zh/i18n
+#        url:    /docs/zh/i18n.html
 #  - title:      内容
 #    children:
 #      - title:  撰写博客
-#        url:    /docs/zh/writing-posts
+#        url:    /docs/zh/writing-posts.html
 #      - title:  附加样式
-#        url:    /docs/zh/additional-styles
+#        url:    /docs/zh/additional-styles.html
 #      - title:  扩展
-#        url:    /docs/zh/extensions
+#        url:    /docs/zh/extensions.html
 #      - title:  Markdown 增强
-#        url:    /docs/zh/markdown-enhancements
+#        url:    /docs/zh/markdown-enhancements.html
 #  - title:      其他语言
 #    children:
 #      - title:  English
-#        url:    /en/load/quick-start
+#        url:    /en/load/quick-start.html
 
 layouts:
   - title: Layouts
