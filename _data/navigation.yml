@@ -66,6 +66,8 @@ docs-en:
         url: /en/load/commands/verify.html
       - title: load init
         url: /en/load/commands/init.html
+      - title:  cluster install
+        url:    /en/cluster/commands/install.html
       - title:  cluster deploy
         url:    /en/cluster/commands/deploy.html
       - title:  cluster destroy

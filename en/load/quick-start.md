@@ -17,7 +17,10 @@ Once the test cluster runs, you can view results, create reports, and administer
 
 [<img src="{{ site.baseurl }}/assets/images/load/screenshot.png" width="500"/>]({{ site.baseurl }}/assets/images/load/screenshot.png)
 
-Let's get going!
+We'll walk through a quick start to get you up and running with a test in minutes. This is a local (Docker) test,
+but the process is the same for a remote test, except you'll need [AWS credentials](configuring-aws-credentials)
+
+Let's go!
 
 ## Prerequisites
 
@@ -27,7 +30,8 @@ If Javascript is not your thing, don’t worry, you don’t need to know Javascr
 NPM is just how you install the CLI.
 
 ### Requirements:
-Local Cluster:
+
+Local Installation (Docker):
 * Docker installed and running (current version)
 * 32 GB RAM or more (recommended)
 
@@ -41,6 +45,16 @@ Cloud Cluster:
 ```bash
 npm install -g browserup
 ```
+
+### Install the local docker images
+
+```bash
+browserup cluster install
+```
+
+This will download the docker images locally into Docker.
+Grab a coffee! This will take several minutes, but you won't need to do it again.
+
 
 ## Creating your First Test
 

@@ -21,6 +21,7 @@ termshot -f "./load-help.png" -- "browserup load -h"
 
 # Cluster Commands
 termshot -f "./cluster-deploy.png" -- "browserup cluster deploy -h"
+termshot -f "./cluster-install.png" -- "browserup cluster install -h"
 termshot -f "./cluster-info.png" -- "browserup cluster info -h"
 termshot -f "./cluster-destroy.png" -- "browserup cluster destroy -h"
 termshot -f "./cluster-upgrade.png" -- "browserup cluster upgrade -h"

@@ -30,7 +30,7 @@ Overview:
   A - Follow the file layout.
   B - Specify permalink: /some/route at the top of each file
 * For now, we are using the file layout for routing
-* Site config is at _config.yml at the route
+* Site config is at _config.yml at the root
 * The navigations (menu, and sidebar) are in _data/navigation.yml
 * Any folder with an underscore won't be in the actual outputted _site
 * Images are in assets/images. Follow the examples in /en/load for linking.
