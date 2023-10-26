@@ -66,7 +66,7 @@ reference the name in the browserup system.
 
 ## Creating a test config
 
-The easiest way to create a sample test config is to use the [init](/en/load/commands/init.html) command.
+The easiest way to create a sample test config is to use the [init]({{ site.baseurl }}/en/load/commands/init.html) command.
 
 
 #### Expanded, commented, load test config:

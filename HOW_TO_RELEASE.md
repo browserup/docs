@@ -1,5 +1,27 @@
 # HOW TO RELEASE
 
+cd to app/assets/images
+
+In terminal window, run:
+```bash
+./capture-commands.sh
+```
+This will regenerate the images in the app/assets/images/cli folder.
+
+Run
+
+```bash
+jekyll build
+```
+This will regenerate _site
+
+Open the "Local" app
+
+
+
+
+----------------------------
+
 ## Preparation
 
 - diff configs (*_config.yml*, *docs/_config.yml*, *docs/_config.dev.yml*, *test/_config.yml*)

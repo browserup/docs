@@ -4,7 +4,7 @@ title: Why BrowserUp?
 
 <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> offers a new approach to load testing, the first
 
-See [our manifesto](manifesto.md) for more about _why_ we think this is the right approach to load testing.
+See [our manifesto](manifesto.html) for more about _why_ we think this is the right approach to load testing.
 
 ## How is it different?
 

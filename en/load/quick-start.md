@@ -18,7 +18,7 @@ Once the test cluster runs, you can view results, create reports, and administer
 [<img src="{{ site.baseurl }}/assets/images/load/screenshot.png" width="500"/>]({{ site.baseurl }}/assets/images/load/screenshot.png)
 
 We'll walk through a quick start to get you up and running with a test in minutes. This is a local (Docker) test,
-but the process is the same for a remote test, except you'll need [AWS credentials](configuring-aws-credentials)
+but the process is the same for a remote test, except you'll need [AWS credentials](configuring-aws-credentials.html)
 
 Let's go!
 
@@ -120,7 +120,7 @@ That's it! You've run your first test!
 ### Cloud Runs
 
 This quick start focused on a local Docker run, but the process for a
-remote run is the same, except you'll need [AWS credentials](configuring-aws-credentials)
+remote run is the same, except you'll need [AWS credentials](configuring-aws-credentials.html)
 defined, and to set in your browserup.load.yaml:
 ```yaml
 cluster_type: aws

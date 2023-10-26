@@ -15,12 +15,12 @@ This internal REST API can be used for the following items:
 
 | Class | Method | HTTP request | Description |
 |------------ | ------------- | ------------- | -------------|
-| *BrowserUpProxyApi* | [**addCounter**](Apis/BrowserUpProxyApi.md#addcounter) | **POST** /har/counters | Add Custom Counter to the captured traffic har |
-*BrowserUpProxyApi* | [**addError**](Apis/BrowserUpProxyApi.md#adderror) | **POST** /har/errors | Add Custom Error to the captured traffic har |
-*BrowserUpProxyApi* | [**verifyNotPresent**](Apis/BrowserUpProxyApi.md#verifynotpresent) | **POST** /verify/not_present/{name} | Verify no matching items are present in the captured traffic |
-*BrowserUpProxyApi* | [**verifyPresent**](Apis/BrowserUpProxyApi.md#verifypresent) | **POST** /verify/present/{name} | Verify at least one matching item is present in the captured traffic |
-*BrowserUpProxyApi* | [**verifySLA**](Apis/BrowserUpProxyApi.md#verifysla) | **POST** /verify/sla/{time}/{name} | Verify each traffic item matching the criteria meets is below SLA time |
-*BrowserUpProxyApi* | [**verifySize**](Apis/BrowserUpProxyApi.md#verifysize) | **POST** /verify/size/{size}/{name} | Verify matching items in the captured traffic meet the size criteria |
+| *BrowserUpProxyApi* | **addCounter** | **POST** /har/counters | Add Custom Counter to the captured traffic har |
+*BrowserUpProxyApi* | **addError**| **POST** /har/errors | Add Custom Error to the captured traffic har |
+*BrowserUpProxyApi* | **verifyNotPresent**| **POST** /verify/not_present/{name} | Verify no matching items are present in the captured traffic |
+*BrowserUpProxyApi* | **verifyPresent** | **POST** /verify/present/{name} | Verify at least one matching item is present in the captured traffic |
+*BrowserUpProxyApi* | **verifySLA** | **POST** /verify/sla/{time}/{name} | Verify each traffic item matching the criteria meets is below SLA time |
+*BrowserUpProxyApi* | **verifySize** | **POST** /verify/size/{size}/{name} | Verify matching items in the captured traffic meet the size criteria |
 
 
 Learn more from the documentation at [BrowserUpProxyApi](https://github.com/browserup/mitmproxy/tree/main/clients/api-doc)
