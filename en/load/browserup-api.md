@@ -23,8 +23,8 @@ This internal REST API can be used for the following items:
 *BrowserUpProxyApi* | **verifySize** | **POST** /verify/size/{size}/{name} | Verify matching items in the captured traffic meet the size criteria |
 
 
-Learn more from the documentation at [BrowserUpProxyApi](https://github.com/browserup/mitmproxy/tree/main/clients/api-doc)
+Learn more from the documentation at [BrowserUpProxyApi](https://github.com/browserup/mitmproxy/tree/main/clients/api-doc).
 
-Note that client libraries are generated from the Swagger/OpenAPI spec in JavaScript, Java, Ruby, Python, and C#
-The clients libraries are available in the containers at /home/browserup/clients/_lang_
+Note that client libraries are generated from the Swagger/OpenAPI spec in JavaScript, Java, Ruby, Python, and C#.
+The clients libraries are available in the containers at /home/browserup/clients/_lang_.
 
