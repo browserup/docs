@@ -10,7 +10,7 @@ The cli allows you to:
 
 * Create tests
   - The CLI can also be used to verify scripts in the containerized environment
-  - Generate test configs (browserup.load.yaml) for various
+  - Generate test configs (browserup.load.yaml) for various languages and test frameworks
 
 ## Commands
 
