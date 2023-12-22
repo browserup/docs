@@ -28,8 +28,8 @@ Use your acceptance test, or your own "page objects" libraries. These are typica
     You maintain a set of scripts in these other tools that tell Jmeter or LoadRunner what API calls to make.
 
 ### with BrowserUp, your load test can be:
-  -Your own REST client library making the calls
-  -Your own PostMan collection making the calls
+* Your own REST client library making the calls
+* Your own PostMan collection making the calls
 
-You just keep the same stuff you are using up-to-date, and your load test maintenance is free.
+Keep the same stuff you are using up-to-date, and your load test maintenance is free.
 
