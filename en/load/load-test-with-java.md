@@ -11,7 +11,7 @@ Our browserup/standard image ships with Java pre-installed.
 
 If you have a code library that makes HTTP/Websocket requests, you can call
 your library directly to make requests on your behalf. For example, if you
-have an internal client library for a REST api, you can use your own library to
+have an internal client library for a REST API, you can use your own library to
 generate load with <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> while capturing your traffic.
 
 The key advantages to doing this with <span style="font-weight: bold; color: #de792b;">Browser</span><span style="font-weight: bold; color: #6e6e6e;">Up</span> are:
@@ -22,7 +22,7 @@ The key advantages to doing this with <span style="font-weight: bold; color: #de
 
 There are two approaches to creating this type of test:
 
-* Use our standard image with a FAT Jar. A Fat JAR is compiled with all
+* Use our standard image with a FAT Jar. A FAT JAR is compiled with all
 dependencies built into the Jar. For this approach, your app will be run with our
 built-in Java (OpenJDK 17)
 
@@ -52,7 +52,5 @@ you won't necessarily need to create a FAT jar (although that's fine as well).
 At present, the base for the custom image must be our browserup/custom-base image, which is built on Debian Bookworm Slim.
 
 So simply start your Dockerfile with:
-browserup/custom-base
-
-Then install your dependencies as needed.
+browserup/custom-base, then install your dependencies as needed.
 
